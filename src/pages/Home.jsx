@@ -60,7 +60,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get('http://3wdz.c.time4vps.cloud:3000/')
+      .get('https://3wdz.c.time4vps.cloud:3000/')
       .then((response) => {
         // response.data;
         setFileStructure(response.data);

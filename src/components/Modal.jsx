@@ -10,7 +10,7 @@ const Modal = ({ imageSrc, onClose }) => {
           <div className="top-0 right-0 ">
             <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
               <img
-                src="/src/assets/download.svg"
+                src="../assets/download.svg"
                 alt=""
                 className="w-[17px] h-[17px]"
               />
@@ -51,7 +51,7 @@ const Modal = ({ imageSrc, onClose }) => {
           <>
             <img
               className="rounded-lg object-cover h-[392px] w-[631px]"
-              src="/src/assets/folder-icon-image.svg"
+              src="../assets/folder-icon-image.svg"
               alt=""
             />
           </>
@@ -63,7 +63,7 @@ const Modal = ({ imageSrc, onClose }) => {
               (imageSrc.type === 'file' && imageSrc.name.endsWith('.jpg')) ? (
                 <>
                   <img
-                    src="/src/assets/folder-icon-image.svg"
+                    src="../assets/folder-icon-image.svg"
                     alt=""
                     className="w-[17px] h-[17px]"
                   />
@@ -74,7 +74,7 @@ const Modal = ({ imageSrc, onClose }) => {
                   {' '}
                   <img
                     className="w-[17px] h-[17px]"
-                    src="/src/assets/folder-icon-pdf.svg"
+                    src="../assets/folder-icon-pdf.svg"
                     alt=""
                   />
                 </>
@@ -84,14 +84,14 @@ const Modal = ({ imageSrc, onClose }) => {
                   {' '}
                   <img
                     className="w-[17px] h-[17px]"
-                    src="/src/assets/folder-xlx-icon.svg"
+                    src="../assets/folder-xlx-icon.svg"
                     alt=""
                   />
                 </>
               ) : (
                 <>
                   <img
-                    src="/src/assets/folder-icon-image.svg"
+                    src="../assets/folder-icon-image.svg"
                     alt=""
                     className="w-[17px] h-[17px]"
                   />

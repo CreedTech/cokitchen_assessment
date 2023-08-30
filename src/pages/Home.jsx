@@ -70,7 +70,7 @@ const Home = () => {
             className="bg-gray-50 border border-gray-300 text-gray-500 focus:ring-blue-500 focus:border-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
             type="button"
           >
-            Sort <img src="/src/assets/sort.svg" className="ml-5" alt="" />
+            Sort <img src="../assets/sort.svg" className="ml-5" alt="" />
           </button>
           {isDropdownOpen && (
             <div
@@ -108,7 +108,7 @@ const Home = () => {
           </label>
           <div className="relative mf:w-full">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <img src="/src/assets/search.svg" alt="" />
+              <img src="../assets/search.svg" alt="" />
             </div>
             <input
               type="text"
@@ -134,7 +134,7 @@ const Home = () => {
                 <div className="">
                   <div className="bg-gray-200 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                     <img
-                      src="/src/assets/folder.svg"
+                      src="../assets/folder.svg"
                       alt=""
                       className="w-[19px] h-[19px]"
                     />
@@ -191,13 +191,13 @@ const Home = () => {
                       <div className="bg-gray-500 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                         {item.favourite === true ? (
                           <img
-                            src="/src/assets/heart-filled.svg"
+                            src="../assets/heart-filled.svg"
                             alt=""
                             className="w-[17px] h-[17px]"
                           />
                         ) : (
                           <img
-                            src="/src/assets/heart_outlined.svg"
+                            src="../assets/heart_outlined.svg"
                             alt=""
                             className="w-[17px] h-[17px]"
                           />
@@ -211,7 +211,7 @@ const Home = () => {
                         <div className="flex flex-col items-center">
                           <img
                             className="w-24 h-[215px]"
-                            src="/src/assets/folder-xlx-icon.svg"
+                            src="../assets/folder-xlx-icon.svg"
                             alt=""
                             onDoubleClick={() =>
                               handleDownloadClick(item.src, item.name)
@@ -221,13 +221,13 @@ const Home = () => {
                             <div className="bg-gray-500 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                               {item.favourite === true ? (
                                 <img
-                                  src="/src/assets/heart-filled.svg"
+                                  src="../assets/heart-filled.svg"
                                   alt=""
                                   className="w-[17px] h-[17px]"
                                 />
                               ) : (
                                 <img
-                                  src="/src/assets/heart_outlined.svg"
+                                  src="../assets/heart_outlined.svg"
                                   alt=""
                                   className="w-[17px] h-[17px]"
                                 />
@@ -237,7 +237,7 @@ const Home = () => {
                           <div className="absolute bottom-5 left-2">
                             <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                               <img
-                                src="/src/assets/download.svg"
+                                src="../assets/download.svg"
                                 alt=""
                                 className="w-[17px] h-[17px]"
                               />
@@ -246,7 +246,7 @@ const Home = () => {
                           <div className="absolute bottom-5 left-12">
                             <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                               <img
-                                src="/src/assets/print.svg"
+                                src="../assets/print.svg"
                                 alt=""
                                 className="w-[17px] h-[17px]"
                               />
@@ -262,7 +262,7 @@ const Home = () => {
                       <div className="flex flex-col items-center">
                         <img
                           className="w-24 h-[215px]"
-                          src="/src/assets/pdf.svg"
+                          src="../assets/pdf.svg"
                           alt=""
                           onDoubleClick={() =>
                             handleDownloadClick(item.src, item.name)
@@ -271,7 +271,7 @@ const Home = () => {
                         <div className="absolute top-5 right-5">
                           <div className="bg-gray-500 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             <img
-                              src="/src/assets/heart_outlined.svg"
+                              src="../assets/heart_outlined.svg"
                               alt=""
                               className="w-[17px] h-[17px]"
                             />
@@ -280,7 +280,7 @@ const Home = () => {
                         <div className="absolute bottom-5 left-2">
                           <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             <img
-                              src="/src/assets/download.svg"
+                              src="../assets/download.svg"
                               alt=""
                               className="w-[17px] h-[17px]"
                             />
@@ -289,7 +289,7 @@ const Home = () => {
                         <div className="absolute bottom-5 left-12">
                           <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             <img
-                              src="/src/assets/print.svg"
+                              src="../assets/print.svg"
                               alt=""
                               className="w-[17px] h-[17px]"
                             />
@@ -303,7 +303,7 @@ const Home = () => {
                   <>
                     <img
                       className="rounded-lg object-cover h-[215px] w-[264px]"
-                      src="/src/assets/folder-icon-image.svg"
+                      src="../assets/folder-icon-image.svg"
                       alt=""
                       onDoubleClick={() => handleImageClick(item)}
                     />
@@ -311,13 +311,13 @@ const Home = () => {
                       <div className="bg-gray-500 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                         {item.favourite === true ? (
                           <img
-                            src="/src/assets/heart-filled.svg"
+                            src="../assets/heart-filled.svg"
                             alt=""
                             className="w-[17px] h-[17px]"
                           />
                         ) : (
                           <img
-                            src="/src/assets/heart_outlined.svg"
+                            src="../assets/heart_outlined.svg"
                             alt=""
                             className="w-[17px] h-[17px]"
                           />
@@ -333,7 +333,7 @@ const Home = () => {
                       (item.type === 'file' && item.name.endsWith('.jpg')) ? (
                         <>
                           <img
-                            src="/src/assets/folder-icon-image.svg"
+                            src="../assets/folder-icon-image.svg"
                             alt=""
                             className="w-[17px] h-[17px]"
                           />
@@ -345,7 +345,7 @@ const Home = () => {
                           {' '}
                           <img
                             className="w-[17px] h-[17px]"
-                            src="/src/assets/folder-xlx-icon.svg"
+                            src="../assets/folder-xlx-icon.svg"
                             alt=""
                           />
                         </>
@@ -355,14 +355,14 @@ const Home = () => {
                           {' '}
                           <img
                             className="w-[17px] h-[17px]"
-                            src="/src/assets/folder-icon-pdf.svg"
+                            src="../assets/folder-icon-pdf.svg"
                             alt=""
                           />
                         </>
                       ) : (
                         <>
                           <img
-                            src="/src/assets/folder-icon-image.svg"
+                            src="../assets/folder-icon-image.svg"
                             alt=""
                             className="w-[17px] h-[17px]"
                           />

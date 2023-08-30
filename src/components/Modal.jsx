@@ -1,6 +1,10 @@
 /* eslint-disable react/prop-types */
 // import './Modal.css'; // Import your CSS file for styling
 import { format } from 'date-fns';
+import download from '../assets/download.svg';
+import iconImage from '../assets/folder-icon-image.svg';
+import iconPdf from '../assets/folder-icon-pdf.svg';
+import iconXlsx from '../assets/folder-xlx-icon.svg';
 
 const Modal = ({ imageSrc, onClose }) => {
   return (
@@ -9,11 +13,7 @@ const Modal = ({ imageSrc, onClose }) => {
         <div className="flex justify-between mb-10">
           <div className="top-0 right-0 ">
             <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
-              <img
-                src="../assets/download.svg"
-                alt=""
-                className="w-[17px] h-[17px]"
-              />
+              <img src={download} alt="" className="w-[17px] h-[17px]" />
             </div>
           </div>
           <div className="top-0 right-0 ">
@@ -51,7 +51,7 @@ const Modal = ({ imageSrc, onClose }) => {
           <>
             <img
               className="rounded-lg object-cover h-[392px] w-[631px]"
-              src="../assets/folder-icon-image.svg"
+              src={iconImage}
               alt=""
             />
           </>
@@ -62,11 +62,7 @@ const Modal = ({ imageSrc, onClose }) => {
               {imageSrc.src.endsWith('.jpg') ||
               (imageSrc.type === 'file' && imageSrc.name.endsWith('.jpg')) ? (
                 <>
-                  <img
-                    src="../assets/folder-icon-image.svg"
-                    alt=""
-                    className="w-[17px] h-[17px]"
-                  />
+                  <img src={iconImage} alt="" className="w-[17px] h-[17px]" />
                 </>
               ) : imageSrc.src.endsWith('.pdf') ||
                 (imageSrc.type === 'file' && imageSrc.name.endsWith('.pdf')) ? (
@@ -74,7 +70,7 @@ const Modal = ({ imageSrc, onClose }) => {
                   {' '}
                   <img
                     className="w-[17px] h-[17px]"
-                    src="../assets/folder-icon-pdf.svg"
+                    src={iconPdf}
                     alt=""
                   />
                 </>
@@ -84,17 +80,13 @@ const Modal = ({ imageSrc, onClose }) => {
                   {' '}
                   <img
                     className="w-[17px] h-[17px]"
-                    src="../assets/folder-xlx-icon.svg"
+                    src={iconXlsx}
                     alt=""
                   />
                 </>
               ) : (
                 <>
-                  <img
-                    src="../assets/folder-icon-image.svg"
-                    alt=""
-                    className="w-[17px] h-[17px]"
-                  />
+                  <img src={iconImage} alt="" className="w-[17px] h-[17px]" />
                 </>
               )}
             </div>

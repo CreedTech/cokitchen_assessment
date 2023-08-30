@@ -4,6 +4,16 @@ import { format } from 'date-fns';
 import axios from 'axios';
 // import { Link } from 'react-router-dom';
 import Modal from '../components/Modal';
+import download from '../assets/download.svg';
+import iconImage from '../assets/folder-icon-image.svg';
+import iconPdf from '../assets/folder-icon-pdf.svg';
+import iconXlsx from '../assets/folder-xlx-icon.svg';
+import print from '../assets/print.svg';
+import search from '../assets/search.svg';
+import folder from '../assets/folder.svg';
+import sort from '../assets/sort.svg';
+import favouriteIconFilled from '../assets/heart-filled.svg';
+import favouriteIconOutlined from '../assets/heart_outlined.svg';
 
 const FolderDetails = () => {
   const { folderId } = useParams();
@@ -70,7 +80,7 @@ const FolderDetails = () => {
             className="bg-gray-50 border border-gray-300 text-gray-500 focus:ring-blue-500 focus:border-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
             type="button"
           >
-            Sort <img src="../assets/sort.svg" className="ml-5" alt="" />
+            Sort <img src={sort} className="ml-5" alt="" />
           </button>
           {isDropdownOpen && (
             <div
@@ -108,7 +118,7 @@ const FolderDetails = () => {
           </label>
           <div className="relative w-full">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <img src="../assets/search.svg" alt="" />
+              <img src={search} alt="" />
             </div>
             <input
               type="text"
@@ -131,11 +141,7 @@ const FolderDetails = () => {
               <div className="flex flex-row items-center gap-2">
                 <div className="">
                   <div className="bg-gray-200 rounded-full w-[35px] h-[35px] items-center flex justify-center">
-                    <img
-                      src="../assets/folder.svg"
-                      alt=""
-                      className="w-[19px] h-[19px]"
-                    />
+                    <img src={folder} alt="" className="w-[19px] h-[19px]" />
                   </div>
                 </div>
                 <div className="text-start">
@@ -187,13 +193,13 @@ const FolderDetails = () => {
                       <div className="bg-gray-500 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                         {item.favourite === true ? (
                           <img
-                            src="../assets/heart-filled.svg"
+                            src={favouriteIconFilled}
                             alt=""
                             className="w-[17px] h-[17px]"
                           />
                         ) : (
                           <img
-                            src="../assets/heart_outlined.svg"
+                            src={favouriteIconOutlined}
                             alt=""
                             className="w-[17px] h-[17px]"
                           />
@@ -207,7 +213,7 @@ const FolderDetails = () => {
                       <div className="flex flex-col items-center">
                         <img
                           className="w-24 h-[215px]"
-                          src="../assets/folder-xlx-icon.svg"
+                          src={iconXlsx}
                           alt=""
                           onDoubleClick={() =>
                             handleDownloadClick(item.src, item.name)
@@ -217,13 +223,13 @@ const FolderDetails = () => {
                           <div className="bg-gray-500 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             {item.favourite === true ? (
                               <img
-                                src="../assets/heart-filled.svg"
+                                src={favouriteIconFilled}
                                 alt=""
                                 className="w-[17px] h-[17px]"
                               />
                             ) : (
                               <img
-                                src="../assets/heart_outlined.svg"
+                                src={favouriteIconOutlined}
                                 alt=""
                                 className="w-[17px] h-[17px]"
                               />
@@ -233,7 +239,7 @@ const FolderDetails = () => {
                         <div className="absolute bottom-5 left-2">
                           <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             <img
-                              src="../assets/download.svg"
+                              src={download}
                               alt=""
                               className="w-[17px] h-[17px]"
                             />
@@ -242,7 +248,7 @@ const FolderDetails = () => {
                         <div className="absolute bottom-5 left-12">
                           <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             <img
-                              src="../assets/print.svg"
+                              src={print}
                               alt=""
                               className="w-[17px] h-[17px]"
                             />
@@ -268,13 +274,13 @@ const FolderDetails = () => {
                           <div className="bg-gray-500 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             {item.favourite === true ? (
                               <img
-                                src="../assets/heart-filled.svg"
+                                src={favouriteIconFilled}
                                 alt=""
                                 className="w-[17px] h-[17px]"
                               />
                             ) : (
                               <img
-                                src="../assets/heart_outlined.svg"
+                                src={favouriteIconOutlined}
                                 alt=""
                                 className="w-[17px] h-[17px]"
                               />
@@ -284,7 +290,7 @@ const FolderDetails = () => {
                         <div className="absolute bottom-5 left-2">
                           <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             <img
-                              src="../assets/download.svg"
+                              src={download}
                               alt=""
                               className="w-[17px] h-[17px]"
                             />
@@ -293,7 +299,7 @@ const FolderDetails = () => {
                         <div className="absolute bottom-5 left-12">
                           <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             <img
-                              src="../assets/print.svg"
+                              src={print}
                               alt=""
                               className="w-[17px] h-[17px]"
                             />
@@ -309,7 +315,7 @@ const FolderDetails = () => {
                       <div className="flex flex-col items-center">
                         <img
                           className="w-24 h-[215px]"
-                          src="../assets/folder-icon-image.svg"
+                          src={iconImage}
                           alt=""
                           onDoubleClick={() => handleImageClick(item)}
                         />
@@ -317,13 +323,13 @@ const FolderDetails = () => {
                           <div className="bg-gray-500 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             {item.favourite === true ? (
                               <img
-                                src="../assets/heart-filled.svg"
+                                src={favouriteIconFilled}
                                 alt=""
                                 className="w-[17px] h-[17px]"
                               />
                             ) : (
                               <img
-                                src="../assets/heart_outlined.svg"
+                                src={favouriteIconOutlined}
                                 alt=""
                                 className="w-[17px] h-[17px]"
                               />
@@ -333,7 +339,7 @@ const FolderDetails = () => {
                         <div className="absolute bottom-5 left-2">
                           <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             <img
-                              src="../assets/download.svg"
+                              src={download}
                               alt=""
                               className="w-[17px] h-[17px]"
                             />
@@ -342,7 +348,7 @@ const FolderDetails = () => {
                         <div className="absolute bottom-5 left-12">
                           <div className="bg-transparent border-2 border-[#DFE1E2] rounded-full w-[35px] h-[35px] items-center flex justify-center">
                             <img
-                              src="../assets/print.svg"
+                              src={print}
                               alt=""
                               className="w-[17px] h-[17px]"
                             />
@@ -359,19 +365,9 @@ const FolderDetails = () => {
                       (item.type === 'file' && item.name.endsWith('.jpg')) ? (
                         <>
                           <img
-                            src="../assets/folder-icon-image.svg"
+                            src={iconImage}
                             alt=""
                             className="w-[17px] h-[17px]"
-                          />
-                        </>
-                      ) : item.src.endsWith('.pdf') ||
-                        (item.type === 'file' && item.name.endsWith('.pdf')) ? (
-                        <>
-                          {' '}
-                          <img
-                            className="w-[17px] h-[17px]"
-                            src="../assets/folder-icon-pdf.svg"
-                            alt=""
                           />
                         </>
                       ) : item.type === 'file' &&
@@ -380,14 +376,24 @@ const FolderDetails = () => {
                           {' '}
                           <img
                             className="w-[17px] h-[17px]"
-                            src="../assets/folder-xlx-icon.svg"
+                            src={iconXlsx}
+                            alt=""
+                          />
+                        </>
+                      ) : item.src.endsWith('.pdf') ||
+                        (item.type === 'file' && item.name.endsWith('.pdf')) ? (
+                        <>
+                          {' '}
+                          <img
+                            className="w-[17px] h-[17px]"
+                            src={iconPdf}
                             alt=""
                           />
                         </>
                       ) : (
                         <>
                           <img
-                            src="../assets/folder-icon-image.svg"
+                            src={iconImage}
                             alt=""
                             className="w-[17px] h-[17px]"
                           />

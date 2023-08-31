@@ -61,12 +61,14 @@ const Home = () => {
   useEffect(() => {
     axios
       .get('http://3wdz.c.time4vps.cloud:3000/'
-      //   , {
-      //   headers: {
-      //       "Access-Control-Allow-Origin": "*",
-      //       "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
-      //     }
-      // }
+        , {
+          headers: {
+            "Content-Security-Policy": "upgrade-insecure-requests",
+            // 'unsafe-eval',
+            // "Access-Control-Allow-Origin": "*",
+            // "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+          }
+      }
       )
       .then((response) => {
         // response.data;

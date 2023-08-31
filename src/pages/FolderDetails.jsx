@@ -60,12 +60,14 @@ const FolderDetails = () => {
   useEffect(() => {
     console.log('Fetching folder content for folderId:', folderId);
     axios
-      .get(`http://3wdz.c.time4vps.cloud:3000/file/${folderId}`, {
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
-          }
-      })
+      .get(`http://3wdz.c.time4vps.cloud:3000/file/${folderId}`
+      //   , {
+      //   headers: {
+      //       "Access-Control-Allow-Origin": "*",
+      //       "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+      //     }
+      // }
+      )
       .then((response) => {
         console.log('API Response:', response.data);
         setFolderContent(response.data);

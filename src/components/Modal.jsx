@@ -68,21 +68,13 @@ const Modal = ({ imageSrc, onClose }) => {
                 (imageSrc.type === 'file' && imageSrc.name.endsWith('.pdf')) ? (
                 <>
                   {' '}
-                  <img
-                    className="w-[17px] h-[17px]"
-                    src={iconPdf}
-                    alt=""
-                  />
+                  <img className="w-[17px] h-[17px]" src={iconPdf} alt="" />
                 </>
               ) : imageSrc.type === 'file' &&
                 imageSrc.name.endsWith('.xlsx') ? (
                 <>
                   {' '}
-                  <img
-                    className="w-[17px] h-[17px]"
-                    src={iconXlsx}
-                    alt=""
-                  />
+                  <img className="w-[17px] h-[17px]" src={iconXlsx} alt="" />
                 </>
               ) : (
                 <>

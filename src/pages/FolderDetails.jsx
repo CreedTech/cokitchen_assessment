@@ -102,7 +102,7 @@ const FolderDetails = () => {
                 <li>
                   <p
                     onClick={() => setSortOrder('name')}
-                    className="block px-4 py-2 text-black bg-white"
+                    className="block px-4 py-2 text-black bg-white cursor-pointer"
                   >
                     By name
                   </p>
@@ -110,7 +110,7 @@ const FolderDetails = () => {
                 <li>
                   <p
                     onClick={() => setSortOrder('created_at')}
-                    className="block px-4 py-2 text-black bg-white"
+                    className="block px-4 py-2 text-black bg-white cursor-pointer"
                   >
                     By time created
                   </p>
@@ -138,8 +138,8 @@ const FolderDetails = () => {
           </div>
         </form>
       </div>
-      <div className='flex h-screen'>
-        <div className='mx-auto md:mr-auto'>
+      <div className="flex h-screen">
+        <div className="mx-auto md:mr-auto">
           <h4 className="mt-10 mb-6 ml-6 text-xl font-semibold leading-6 md:ml-0">
             Folders
           </h4>
@@ -150,7 +150,7 @@ const FolderDetails = () => {
                   key={item.id}
                   className="items-center block px-5 py-2 text-sm text-center text-gray-900 border border-[#EFF0F0] rounded-lg w-72 bg-white "
                 >
-                  <div className="flex flex-row items-center gap-2">
+                  <div className="flex flex-row items-center gap-2 cursor-pointer">
                     <div className="">
                       <div className="bg-gray-200 rounded-full w-[35px] h-[35px] items-center flex justify-center">
                         <img
@@ -179,7 +179,9 @@ const FolderDetails = () => {
             )}
           </div>
 
-          <h4 className="mt-10 mb-6 ml-6 text-xl font-semibold leading-6 md:ml-0">Files</h4>
+          <h4 className="mt-10 mb-6 ml-6 text-xl font-semibold leading-6 md:ml-0">
+            Files
+          </h4>
           <div className="grid gap-4 ml-6 md:ml-0 md:grid-cols-4">
             {folderContent
               .sort((a, b) => {

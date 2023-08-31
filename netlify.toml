@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "https://animated-druid-6686cc.netlify/.app*"
+  from = "https://animated-druid-6686cc.netlify.app/*"
   to = "http://animated-druid-6686cc.netlify.app/:splat"
   status = 301
   force = true
